@@ -1,0 +1,10 @@
+build:
+  python_version: "3.10"
+  system_packages:
+    - ffmpeg
+    - libsm6
+    - libxext6
+  python_packages:
+    - replicate==0.23.1
+
+predict: "predict.py:Predictor"
