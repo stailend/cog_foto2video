@@ -86,5 +86,6 @@ cog predict \
 
 📦 Deploy to Replicate
 ```
+cog login
 cog push r8-username/foto2video
 ```
