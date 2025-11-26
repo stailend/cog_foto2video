@@ -2,7 +2,7 @@
 
 import torch
 from diffusers import AutoPipelineForText2Image
-
+torch.set_default_device("cpu")
 pipe = None
 
 def load_sdxl_pipeline():
@@ -15,10 +15,10 @@ def load_sdxl_pipeline():
 
         if torch.backends.mps.is_available():
             pipe.to("mps")
-            print("✅ Using MPS on macOS")
+            print("Using MPS")
         else:
             pipe.to("cpu")
-            print("✅ Using CPU")
+            print("Using CPU")
 
     return pipe
 

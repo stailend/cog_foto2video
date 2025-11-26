@@ -23,16 +23,16 @@ The project is packaged with Cog and ready for deployment to Replicate.
 🧠 Pipeline Overview
 
 Stage 1 — Character Image
-Model: black-forest-labs/flux-canny-dev
+Model: segmind/tiny-sd
 
 Stage 2 — Face Swap
-Model: easel/advanced-face-swap
+Model: ezioruan/inswapper_128.onnx
 
 Stage 3 — Image → Video
 Model: wan-video/wan-2.1-1.3b
 
 Stage 4 — Video Enhancement
-Model: topazlabs/video-upscale + FFmpeg
+Model: FFmpeg
 
 ⸻
 
@@ -87,5 +87,5 @@ cog predict \
 📦 Deploy to Replicate
 ```
 cog login
-cog push r8-username/foto2video
+cog push r8.im/nickname/face2videoscene
 ```

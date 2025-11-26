@@ -1,5 +1,6 @@
-import subprocess
+# stages/vfi_post.py
 
+import subprocess
 
 def upscale_fps(input_video: str, output_path: str) -> str:
     cmd = [

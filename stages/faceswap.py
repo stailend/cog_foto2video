@@ -1,3 +1,5 @@
+# stages/faceswap.py
+
 import cv2
 import numpy as np
 import insightface
@@ -6,6 +8,7 @@ from insightface.model_zoo import get_model
 from huggingface_hub import hf_hub_download
 import urllib.request
 import requests
+
 app = None
 swapper = None
 
