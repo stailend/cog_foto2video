@@ -1,12 +1,12 @@
-** 🧙‍♂️ Character generator **
-*** Text Prompt + Face → Final Character Image *** 
+# 🧙‍♂️ Character generator
+## Text Prompt + Face → Final Character Image 
 
 This project generates a custom character image using a text description and swaps the face with a user-provided one (via URL or local file).
 It combines tiny-sd (text-to-image) with InsightFace FaceSwap in a simple, unified pipeline.
 
-⸻
 
-🚀 Features
+
+### 🚀 Features
 	•	Generate a character image using a text prompt
 	•	Replace the face in the generated image with:
 	•	a face URL, or
@@ -14,9 +14,9 @@ It combines tiny-sd (text-to-image) with InsightFace FaceSwap in a simple, unifi
 	•	Single-file pipeline (predict.py)
 	•	Runs on CPU, CUDA, or MPS
 
-⸻
 
-🧠 Technologies Used
+
+### 🧠 Technologies Used
 
 * SD (Tiny-SD)
 
@@ -26,21 +26,21 @@ Uses segmind/tiny-sd to generate high-quality character images from text.
 
 Uses inswapper_128.onnx for accurate and natural-looking face replacement.
 
-⸻
 
-📦 Installation
+
+### 📦 Installation
 ```
 git clone ___
 cd character-generator
 pip install -r requirements.txt
 ```
 
-Run the Pipeline:
+**Run the Pipeline:**
 ```
 python predict.py "<prompt text>" FACE_URL_OR_PATH
 ```
 
-Example: 
+*Example:*
 ```
 python predict.py "cyberpunk samurai woman, neon reflections" \
 "https://example.com/my_face.jpg"
@@ -52,7 +52,9 @@ python predict.py "dark forest sorcerer with glowing symbols" \
 "input_face.png"
 ```
 
-📁 Project Structure
+
+
+### 📁 Project Structure
 
 .
 ├── predict.py               # main pipeline
