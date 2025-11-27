@@ -4,7 +4,17 @@
 This project generates a custom character image using a text description and swaps the face with a user-provided one (via URL or local file).
 It combines tiny-sd (text-to-image) with InsightFace FaceSwap in a simple, unified pipeline.
 
+### 📸 Example Pipeline Output
 
+<p align="center">
+  <img src="./images/ex1.png" alt="Generated Character" width="30%" />
+  <img src="./images/ex2.png" alt="Input Face" width="30%" />
+  <img src="./images/ex3.png" alt="Final Result" width="30%" />
+</p>
+
+<p align="center">
+  <em>Left → SDXL Generated Image, Middle → Input Face, Right → Final FaceSwap Result</em>
+</p>
 
 ### 🚀 Features
  - Generate a character image using a text prompt
@@ -16,21 +26,9 @@ It combines tiny-sd (text-to-image) with InsightFace FaceSwap in a simple, unifi
 
 
 
-### 🧠 Technologies Used
-
-* SD (Tiny-SD)
-
-Uses segmind/tiny-sd to generate high-quality character images from text.
-
-* InsightFace FaceSwap
-
-Uses inswapper_128.onnx for accurate and natural-looking face replacement.
-
-
-
 ### 📦 Installation
 ```
-git clone ___
+git clone https://github.com/stailend/character_generator.git
 cd character-generator
 pip install -r requirements.txt
 ```
@@ -51,3 +49,15 @@ or
 python predict.py "dark forest sorcerer with glowing symbols" \
 "input_face.png"
 ```
+
+
+
+### 🧠 Technologies Used
+
+* SD (Tiny-SD)
+
+Uses segmind/tiny-sd to generate high-quality character images from text.
+
+* InsightFace FaceSwap
+
+Uses inswapper_128.onnx for accurate and natural-looking face replacement.
